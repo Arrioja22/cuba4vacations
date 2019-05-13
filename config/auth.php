@@ -46,6 +46,11 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
+
+        'socios' => [
+            'driver' => 'session',
+            'provider' => 'socios',
+        ],
     ],
 
     /*
@@ -69,6 +74,11 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],
+
+        'socios' => [
+            'driver' => 'eloquent',
+            'model' => App\RegistroSocio::class,
         ],
 
         // 'users' => [
