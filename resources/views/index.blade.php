@@ -23,8 +23,10 @@
             <link href="{{@asset('tours/css/font-awesome.min.css')}}" rel="stylesheet">
             <!-- <link href="tours/css/bootstrap.css" rel="stylesheet"> -->
             <link href="{{@asset('tours/css/magnific-popup.css')}}" rel="stylesheet">
-            <link href="{{@asset('tours/css/bootsnav.css')}}" rel="stylesheet"> 
+            <link href="{{@asset('tours/css/bootsnav.css')}}" rel="stylesheet">
+            <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/> 
             <link href="{{@asset('tours/css/bootstrap.min.css')}}" rel="stylesheet">
+
             <!--For Plugins external css-->
             <link rel="stylesheet" href="assets/css/plugins.css" />
             <!--Theme custom css -->
@@ -36,7 +38,8 @@
             <link rel="stylesheet" href="{{@asset('tours/css/owl.carousel.css')}}">
             <link rel="stylesheet" href="{{@asset('tours/css/owl.theme.default.min.css')}}">
             <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"> 
+            <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
 
 
     </head>
@@ -118,12 +121,12 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="registro_socios/index-form.php" title="Enlace">
+                                <a href="{{url('registrate')}}" title="Enlace">
                                     Se nuestro alfitrion
                                 </a>
                             </li>
                             <li>
-                                <a href="sesion_usuarios/index-form.php" title="Enlace">
+                                <a href="{{url('registro')}}" title="Enlace">
                                     Registrate
                                 </a>
                             </li>
@@ -154,7 +157,7 @@
                                 <a class="btn btn-default m-top-20" target="_blank" data-target="#largeModal" data-toggle="modal">
                                     Leer mas...
                                 </a>
-                                <a class="btn btn-default m-top-20" href="form/formulario.html" target="_blank">
+                                <a class="btn btn-default m-top-20" href="{{url('paquete-promocion')}}" target="_blank">
                                     Reserva Ya!!
                                 </a>
 
@@ -184,7 +187,7 @@
                                 <a class="btn btn-default m-top-20" target="_blank" data-target="#largeModal" data-toggle="modal">
                                     Leer mas...
                                 </a>
-                                <a class="btn btn-default m-top-20" href="form/formulario.html" target="_blank">
+                                <a class="btn btn-default m-top-20" href="{{url('paquete-promocion')}}" target="_blank">
                                     Reserva Ya!!
                                 </a>
 
@@ -213,7 +216,7 @@
                                 <a class="btn btn-default m-top-20" target="_blank" data-target="#largeModal" data-toggle="modal">
                                     Leer mas...
                                 </a>
-                                <a class="btn btn-default m-top-20" href="form/formulario.html" target="_blank">
+                                <a class="btn btn-default m-top-20" href="{{url('paquete-promocion')}}" target="_blank">
                                     Reserva Ya!!
                                 </a>
 
@@ -242,7 +245,7 @@
                                 <a class="btn btn-default m-top-20" target="_blank" data-target="#largeModal" data-toggle="modal">
                                     Leer mas...
                                 </a>
-                                <a class="btn btn-default m-top-20" href="form/formulario.html" target="_blank">
+                                <a class="btn btn-default m-top-20" href="{{url('paquete-promocion')}}" target="_blank">
                                     Reserva Ya!!
                                 </a>
 
@@ -311,7 +314,7 @@
                     </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
-                    <a class="btn btn-primary" href="form/formulario.html">Reservar</a>
+                    <a class="btn btn-primary" href="{{url('paquete-promocion')}}">Reservar</a>
                   </div>
                 </div>
               </div>
@@ -435,10 +438,10 @@
                                         <div class="text_paquete">
                                             Habana
                                         </div>
-                                        <a class="btn btn-primary m-top-20" href="paquetes/index-2.html" target="_blank">
+                                        <a class="btn btn-primary m-top-20" href="{{url('paquetes-cuba')}}" target="_blank">
                                             Leer Mas...
                                         </a>
-                                        <a class="btn btn-primary m-top-20" href="form/formulario-habana.php?destino=habana&casa= Casa Habana&show=Parisien" target="_blank">
+                                        <a class="btn btn-primary m-top-20" href="{{url('paquete-habana')}}" target="_blank">
                                             Reserva Ya!!
                                         </a>
                                         <!--<p><em><a href="">May 15, 2016</a> /<a href="">admin</a>/<a href=""> Co-working</a></em></p>-->
@@ -454,10 +457,10 @@
                                         <div class="text_paquete">
                                             Viñales
                                         </div>
-                                        <a class="btn btn-primary m-top-20" href="paquetes/index-2.html" target="_blank">
+                                        <a class="btn btn-primary m-top-20" href="{{url('paquetes-cuba')}}" target="_blank">
                                             Leer Mas...
                                         </a>
-                                        <a class="btn btn-primary m-top-20" href="form/formulario-varadero.php" target="_blank">
+                                        <a class="btn btn-primary m-top-20" href="{{url('paquete-viñales')}}" target="_blank">
                                             Reserva Ya!!
                                         </a>
                                         <!--<p><em><a href="">May 15, 2016</a> /<a href="">admin</a>/<a href=""> Co-working</a></em></p>-->
@@ -473,10 +476,10 @@
                                         <div class="text_paquete">
                                             Trinidad
                                         </div>
-                                        <a class="btn btn-primary m-top-20" href="paquetes/index-2.html" target="_blank">
+                                        <a class="btn btn-primary m-top-20" href="{{url('paquetes-cuba')}}" target="_blank">
                                             Leer Mas...
                                         </a>
-                                        <a class="btn btn-primary m-top-20" href="form/formulario-viñales.php" target="_blank">
+                                        <a class="btn btn-primary m-top-20" href="{{url('paquete-trinidad')}}" target="_blank">
                                             Reserva Ya!!
                                         </a>
                                         <!--<p><em><a href="">May 15, 2016</a> /<a href="">admin</a>/<a href=""> Co-working</a></em></p>-->
@@ -499,7 +502,7 @@
                     </div>
                     <div><h5 class="name-arma">Planifica cada minuto de tu estancia en cuba, convierte tu viaje soñado en una realidad.</h5></div>
                           
-                     <a class="btn btn-default m-top-20" href="paquetes/index-4.html" target="_blank" title="Enlace">
+                     <a class="btn btn-default m-top-20" href="{{url('destinos-cuba')}}" target="_blank" title="Enlace">
                           Elige tu destino!!
 
                      </a>
@@ -556,9 +559,54 @@
                 </div>
             </div>
         </div>
-            <br>
-            <br>
-            <br>
+        <div class="container m-top-30" >
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-primary">
+                <div class="panel-heading"><h4 class="text-white text-center">Agrega tu comentario</h4></div>
+                <div class="panel-body text-primary">
+                 <form method="POST" action="{{url('/crear-comentario')}}" id="coment-form">
+                    @csrf
+                    <div class="form-group {{ $errors->has('nombre') ? ' has-error' : '' }} col-md-6" >
+                    <label>Nombre:</label>
+                    <input type="text" class="form-control" id="text" name="nombre" required>
+                    @if ($errors->has('nombre'))
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $errors->first('nombre') }}</strong>
+                            </span>
+                          @endif
+                    </div>
+                    <div class="form-group {{ $errors->has('fecha') ? ' has-error has-feedback' : '' }} col-md-6">
+                        <label>Fecha:</label>
+                        <input type="date" class="form-control " name="fecha" required>
+                        @if ($errors->has('fecha'))
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $errors->first('fecha') }}</strong>
+                            </span>
+                          @endif
+                    </div>
+                    <div class="form-group {{ $errors->has('comentario') ? ' has-error' : '' }} col-md-12">
+                        <label>Comentario:</label>
+                        <textarea class="form-control" name="comentario" rows="3" required>
+                        </textarea>
+                        @if ($errors->has('comentario'))
+                            <span class="has-feedback" role="alert">
+                                <strong>{{ $errors->first('comentario') }}</strong>
+                            </span>
+                          @endif
+                    </div>
+                    <div class="panel-footer">
+                        <div class="col-md-2 col-md-offset-10">
+                           <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>      
+                 </form>
+                </div>
+                </div>
+                 </div>
+                 </div>
+        </div>
+            
 
             <!--End off container -->
 
@@ -813,23 +861,24 @@
                             </div>
                         </div>
                         <div class="col-md-8 sm-m-top-30">
-                            <form action="" class="">
+                            <form action="{{url('/contactanos')}}" method="post" class="">
+                                @csrf
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <input class="form-control" id="first_name" name="first_name" placeholder="Nombre"  type="text">
+                                            <input class="form-control input-text" id="first_name" name="nombre" placeholder="Nombre"  type="text" required>
                                             </input>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
-                                            <input class="form-control" id="phone" name="phone" placeholder="Telefono" type="text">
+                                            <input class="form-control input-number" id="phone" name="telefono" placeholder="Telefono" type="text" required>
                                             </input>
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                            <textarea class="form-control" placeholder="Mensaje" rows="6">
+                                            <textarea class="form-control" placeholder="Mensaje" rows="6" name="comentario" required>
                                             </textarea>
 
                                         </div>
@@ -870,7 +919,7 @@
                             </footer>
                         </div>
                         <!-- JS includes -->
-                        <!-- {{ @asset('vendor/bootstrap-4.1/popper.min.js')}}-->
+                       
                         <script src="{{ @asset('tours/js/vendor/jquery-1.11.2.min.js')}}">
                         </script>
                         <script src="{{ @asset('tours/js/vendor/bootstrap.min.js')}}">
@@ -887,9 +936,9 @@
                         </script>
                         <script src="{{ @asset('tours/js/main.js')}}">
                         </script>
-                        <script src="{{ @asset('tours/js/owl.carousel.min.js')}}"></script>
                         <script src="{{ @asset('tours/js/owl.carousel.js')}}"></script>
                         <script src="{{ @asset('tours/js/plugins.js')}}"></script>
+                        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
                         <script type="text/javascript">
                              $(document).ready(function(){
                                 $("#testimonial-slider").owlCarousel({
@@ -913,7 +962,15 @@
                                         autoPlay:true,
                                         autoplayTimeout:1000,
                                         autoplayHoverPause:false
-                                    });
+                                    })
+            $('.input-number').on('input', function () { 
+             this.value = this.value.replace(/[^0-9]/g,'');
+               });
+
+            $('.input-text').on('input', function () {
+             this.value = this.value.replace(/[^A-Za-z," "]/g,'');
+             });
+
                             });
 
                         </script>

@@ -39,11 +39,11 @@ class ContactosController extends Controller
          $data = request()->all();
         Contacto::create([
             'nombre' => $data['nombre'],
-            'telefono' => $data['tel'],
-            'comentario' => $data['descripcion']
+            'telefono' => $data['telefono'],
+            'comentario' => $data['comentario']
  
         ]);
-       return redirect('/Contacto');
+       return redirect()->route('index');
     }
 
     /**

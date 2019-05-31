@@ -17,8 +17,8 @@ class CreatePaqueteVentasTable extends Migration
             $table->bigIncrements('id');
             $table->string('destino');
             $table->string('nom_paquete');
-            $table->date('fecha_llegada');
-            $table->date('fecha_salida');
+            $table->string('fecha_llegada');
+            $table->string('fecha_salida');
             $table->string('show_nocturno')->nullable();
             $table->string('tours')->nullable();
             $table->string('nom_habitacion');

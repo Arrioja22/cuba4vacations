@@ -29,7 +29,7 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form" action="{{url('/Crear_Destino')}}" method="POST">
+              <form role="form" action="{{url('/crear-destino')}}" method="POST">
                 
                 {!! csrf_field() !!}
                 <div class="card-body">

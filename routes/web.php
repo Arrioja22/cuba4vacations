@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
 
 
 
@@ -21,14 +21,29 @@ Route::get('/Dashboard', function () {
     return view('dashboard.dashboard');
 });
 
-Route::get('/Inicio', function () {
+Route::get('paquetes-cuba', function () {
+return view('paquetes.index-2');
+});
+
+Route::get('destinos-cuba', function () {
+return view('paquetes.index-4');
+});
+
+//-------- Destino --------//
+Route::get('paquete-habana','PaqueteVentasController@create');
+Route::get('paquete-trinidad','PaqueteVentasController@create2');
+Route::get('paquete-viñales','PaqueteVentasController@create3');
+Route::get('paquete-promocion','PaqueteVentasController@create4');
+Route::post('paquetes','PaqueteVentasController@store');
+
+Route::get('Inicio', function () {
     return view('socio_home.home');
 })->middleware('auth:socios');
 
 //-------- Destino --------//
-Route::resource('Destino', 'DestinosController');
-Route::get('/Crear_Destino', 'DestinosController@create');
-Route::post('/Crear_Destino', 'DestinosController@store');
+Route::resource('destino', 'DestinosController');
+Route::get('crear-destino', 'DestinosController@create');
+Route::post('crear-destino', 'DestinosController@store');
 
 //-------- Registro Socio --------//
 Route::resource('socios', 'RegistrosSociosController');
@@ -42,18 +57,18 @@ Route::post('salir','SociosLoginController@logout');
 
 //-------- Registro Clientes --------//
 Route::resource('Clientes', 'RegistroClientesController');
-Route::get('/Registro_Cliente', 'RegistroClientesController@create');
+Route::get('registro', 'RegistroClientesController@create');
 Route::post('/Registro_Cliente', 'RegistroClientesController@store');
 
 //-------- Contactanos --------//
-Route::resource('Contacto', 'ContactosController');
-Route::get('/Contactanos', 'ContactosController@create');
-Route::post('/Contactanos', 'ContactosController@store'); 
+Route::resource('contacto', 'ContactosController');
+Route::get('contactanos', 'ContactosController@create');
+Route::post('contactanos', 'ContactosController@store'); 
 
 //-------- Comentarios Clientes --------//
-Route::resource('Comentarios', 'ComentariosController');
-Route::get('/Crear_Comentario', 'ComentariosController@create');
-Route::post('/Crear_Comentario', 'ComentariosController@store');
+Route::resource('comentarios', 'ComentariosController');
+Route::get('crear-comentario', 'ComentariosController@create');
+Route::post('crear-comentario', 'ComentariosController@store');
 
 
 

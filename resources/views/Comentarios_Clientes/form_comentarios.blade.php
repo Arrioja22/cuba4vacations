@@ -29,7 +29,7 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form" action="{{url('/Crear_Comentario')}}" method="POST">
+              <form role="form" action="{{url('/crear-comentario')}}" method="POST">
                 
                 {!! csrf_field() !!}
                 <div class="card-body">
@@ -43,7 +43,7 @@
                   </div>
                   <div class="form-group">
                     <label for="descripcion">Comentario</label>
-                    <input type="text" class="form-control" id="descripcion" placeholder="Escribe un comentario ..." name="descripcion">
+                    <input type="text" class="form-control" id="descripcion" placeholder="Escribe un comentario ..." name="comentario">
                   </div>
                 </div>
                 <!-- /.card-body -->

@@ -35,14 +35,23 @@ class ComentariosController extends Controller
      */
     public function store(Request $request)
     {
+        $data = $request->validate(
+            [
+
+            'nombre' => 'required', 
+            'fecha' => 'required|date',
+            'comentario' => 'required'
+            
+            ]
+        );
         $data = request()->all();
         Comentario::create([
             'nombre' => $data['nombre'],
             'fecha' => $data['fecha'],
-            'comentario' => $data['descripcion']
+            'comentario' => $data['comentario']
  
         ]);
-       return redirect('/Comentarios');
+       return redirect()->route('index');
     }
 
     /**
